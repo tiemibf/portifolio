@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export const Header = ({ title_header }) => {
+export const Header = ({ titleHeader = '' }: { titleHeader?: string }) => {
     return (
         <header id='header'>
             <div>
@@ -10,7 +10,7 @@ export const Header = ({ title_header }) => {
                     <li>pt</li>
                 </ul>
             </div>
-            <p>{title_header}</p>
+            {titleHeader && <p>{titleHeader}</p>}
             <div>
                 <ul>
                     <li><Link to="/about">sobre |</Link></li>
