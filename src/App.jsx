@@ -6,11 +6,11 @@ import {
   RouterProvider
 } from "react-router-dom";
 import { ThemeProvider } from './components/ThemeProvider';
-import About from "./pages/About";
-import ContactMe from "./pages/ContactMe";
-import Curriculum from "./pages/Curriculum";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
+import { About } from "./pages/About";
+import { ContactMe } from "./pages/ContactMe";
+import { Curriculum } from "./pages/Curriculum";
+import { Home } from "./pages/Home";
+import { Projects } from "./pages/Projects";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
