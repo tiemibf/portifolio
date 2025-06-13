@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
   * {
         margin: 0;
         padding: 0;
@@ -13,6 +15,8 @@ const GlobalStyles = createGlobalStyle`
         background: ${({ theme }) => theme.body};
         color: ${({ theme }) => theme.text};
         transition: all 0.3s ease;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
     }
 
     header {
@@ -78,7 +82,7 @@ const GlobalStyles = createGlobalStyle`
 
     #home {
         height: 100vh;
-        background-image: url('./assets/img/curvas-de-nivel.png');
+        background-image: url('/curvas-de-nivel.png');
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: left bottom;
