@@ -6,12 +6,12 @@ const Home = () => {
             <Header />
             <div>
                 <div className='container'>
-                <h1 id='nome'>{"< tiemi fernandes >"}</h1>
-                <p className='subtitulo'>dev. front-end + arquiteta</p>
+                    <h1 id='nome'>{"< tiemi nagazawa >"}</h1>
+                    <p className='subtitulo'>dev. front-end + arquiteta</p>
                 </div>
             </div>
         </>
-);
+    );
 }
 
 export default Home;
