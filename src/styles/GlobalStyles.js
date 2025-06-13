@@ -12,11 +12,15 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        background: ${({ theme }) => theme.body};
         color: ${({ theme }) => theme.text};
         transition: all 0.3s ease;
+        background: linear-gradient(rgba(245, 245, 245, 0.5), rgba(245, 245, 245, 0.5)), url('/curvas-de-nivel.png') no-repeat center 110%, #f5f5f5;
+        background-size: 100%;
+        min-height: 100vh;
+        font-weight: 400;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        overflow: hidden;
     }
 
     header {
