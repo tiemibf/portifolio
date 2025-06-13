@@ -1,8 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 
-const GlobalStyles = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+import '@fontsource/montserrat/400.css';
+import '@fontsource/montserrat/500.css';
 
+
+const GlobalStyles = createGlobalStyle`
   * {
         margin: 0;
         padding: 0;
@@ -14,35 +16,13 @@ const GlobalStyles = createGlobalStyle`
     body {
         color: ${({ theme }) => theme.text};
         transition: all 0.3s ease;
-        background: linear-gradient(rgba(245, 245, 245, 0.5), rgba(245, 245, 245, 0.5)), url('/curvas-de-nivel.png') no-repeat center 110%, #f5f5f5;
+        background: linear-gradient(rgba(245, 245, 245, 0.5), rgba(245, 245, 245, 0.5)), url('/curvas-de-nivel.png') no-repeat center 110%, ${({ theme }) => theme.background};
         background-size: 100%;
         min-height: 100vh;
         font-weight: 400;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         overflow: hidden;
-    }
-
-    header {
-        padding: 40px 40px 20px 40px;
-        display: flex;
-        justify-content: space-between;
-        font-size: 1em;
-        background: ${({ theme }) => theme.body};
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 100;
-    }
-
-    header ul {
-        list-style-type: none;
-        display: flex;
-    }
-
-    header li:not(:first-child) {
-        margin-left: 8px;
     }
 
     a {
