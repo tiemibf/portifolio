@@ -1,7 +1,7 @@
-function NextArrow(){
-    return(
+export const NextArrow = () => {
+    return (
         <div>
-            
+
         </div>
     )
 }

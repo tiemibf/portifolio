@@ -1,6 +1,6 @@
 import Header from '../components/Header';
 
-const Curriculum = () => {
+export const Curriculum = () => {
   return (
     <>
       <Header />
@@ -23,5 +23,3 @@ const Curriculum = () => {
     </>
   )
 }
-
-export default Curriculum;

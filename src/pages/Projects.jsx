@@ -1,6 +1,6 @@
 import Header from '../components/Header';
 
-const Projects = () => {
+export const Projects = () => {
   return (
     <>
       <Header />
@@ -25,5 +25,3 @@ const Projects = () => {
     </>
   )
 }
-
-export default Projects;

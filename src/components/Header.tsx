@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Header({ title_header }) {
+export const Header = ({ title_header }) => {
     return (
         <header id='header'>
             <div>
@@ -22,5 +22,3 @@ function Header({ title_header }) {
         </header>
     )
 }
-
-export default Header;
