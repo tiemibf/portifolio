@@ -1,24 +1,23 @@
 module.exports = {
   "env": {
     "browser": true,
-      "es2021": true,
-        "jest": true
+    "es2021": true,
+    "jest": true
   },
   "extends": [
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
-    "plugin:jsx-a11y/recommended",
-    "plugin:sort-export-all/recommended"
+    "plugin:jsx-a11y/recommended"
   ],
-    "parser": "@typescript-eslint/parser",
-      "parserOptions": {
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
     },
     "ecmaVersion": "latest",
-      "sourceType": "module"
+    "sourceType": "module"
   },
   "plugins": [
     "react",
@@ -27,66 +26,66 @@ module.exports = {
     "import-helpers",
     "import"
   ],
-    "rules": {
+  "rules": {
     "import/newline-after-import": [
       "warn"
     ],
-      "padding-line-between-statements": [
-        "warn",
-        {
-          "blankLine": "always",
-          "prev": "multiline-const",
-          "next": "export"
-        }
-      ],
-        "prettier/prettier": [
-          "error",
-          {
-            "printWidth": 80,
-            "tabWidth": 2,
-            "singleQuote": true,
-            "trailingComma": "all",
-            "arrowParens": "always",
-            "endOfLine": "auto"
-          }
+    "padding-line-between-statements": [
+      "warn",
+      {
+        "blankLine": "always",
+        "prev": "multiline-const",
+        "next": "export"
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 80,
+        "tabWidth": 2,
+        "singleQuote": true,
+        "trailingComma": "all",
+        "arrowParens": "always",
+        "endOfLine": "auto"
+      }
+    ],
+    "react/prop-types": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+        "caughtErrorsIgnorePattern": "^_"
+      }
+    ],
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          "/^react/",
+          "module",
+          "/^@//",
+          [
+            "parent",
+            "sibling",
+            "index"
+          ]
         ],
-          "react/prop-types": "off",
-            "@typescript-eslint/no-unused-vars": [
-              "warn",
-              {
-                "argsIgnorePattern": "^_",
-                "varsIgnorePattern": "^_",
-                "caughtErrorsIgnorePattern": "^_"
-              }
-            ],
-              "import-helpers/order-imports": [
-                "warn",
-                {
-                  "newlinesBetween": "always",
-                  "groups": [
-                    "/^react/",
-                    "module",
-                    "/^@//",
-                    [
-                      "parent",
-                      "sibling",
-                      "index"
-                    ]
-                  ],
-                  "alphabetize": {
-                    "order": "asc",
-                    "ignoreCase": true
-                  }
-                }
-              ],
-                "sort-imports": [
-                  "error",
-                  {
-                    "ignoreCase": true,
-                    "ignoreDeclarationSort": true
-                  }
-                ],
-                  "react/react-in-jsx-scope": "off"
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": true
+        }
+      }
+    ],
+    "sort-imports": [
+      "error",
+      {
+        "ignoreCase": true,
+        "ignoreDeclarationSort": true
+      }
+    ],
+    "react/react-in-jsx-scope": "off"
   },
   "settings": {
     "react": {

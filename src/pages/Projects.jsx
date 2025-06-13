@@ -1,29 +1,29 @@
 import Header from '../components/Header';
 
 const Projects = () => {
-    return(
-        <>
-          <Header />
-          <div className='page'>
-          <div>
+  return (
+    <>
+      <Header />
+      <div className='page'>
+        <div>
 
-          </div>
-            <div className='subtitle'>
-              <h2>_projetos</h2> 
-              <p>hello world (:</p>
-              <p>ao longo da minha vida, já fiz muitas coisas: pratiquei judô, handebol, basquete, natação, caiaque, xadrez, dança lírica, aprendi inglês, francês (um pouco), italiano (um pouquinho), crochê, ponto cruz, desenho, toquei violão, teclado, piano, flauta doce, participei de coral, estudei arquitetura e agora estou mergulhando no mundo da programação.</p> 
+        </div>
+        <div className='subtitle'>
+          <h2>_projetos</h2>
+          <p>hello world (:</p>
+          <p>ao longo da minha vida, já fiz muitas coisas: pratiquei judô, handebol, basquete, natação, caiaque, xadrez, dança lírica, aprendi inglês, francês (um pouco), italiano (um pouquinho), crochê, ponto cruz, desenho, toquei violão, teclado, piano, flauta doce, participei de coral, estudei arquitetura e agora estou mergulhando no mundo da programação.</p>
 
-              <p>acho que com tudo isso, dá pra dizer que eu sou uma pessoa <strong>curiosa</strong> e que <strong>ama aprender</strong> coisas novas todos os dias.</p> 
-              <p><strong>f.a.q.</strong></p>
-              <p><strong>por que você saiu da arquitetura?</strong></p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat vero architecto consequuntur minima pariatur, exercitationem odit commodi, quo aperiam quia cupiditate accusamus hic sed explicabo ipsam error sint officia quaerat nostrum unde. Rerum maiores fuga consequuntur consequatur, fugiat itaque blanditiis adipisci, animi sunt dicta, expedita iure necessitatibus incidunt quos tempore.</p>
-              <p><strong>o que são essas linhas no background?</strong></p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat vero architecto consequuntur minima pariatur, exercitationem odit commodi, quo aperiam quia cupiditate accusamus hic sed explicabo ipsam error sint officia quaerat nostrum unde. Rerum maiores fuga consequuntur consequatur, fugiat itaque blanditiis adipisci, animi sunt dicta, expedita iure necessitatibus incidunt quos tempore.</p>
+          <p>acho que com tudo isso, dá pra dizer que eu sou uma pessoa <strong>curiosa</strong> e que <strong>ama aprender</strong> coisas novas todos os dias.</p>
+          <p><strong>f.a.q.</strong></p>
+          <p><strong>por que você saiu da arquitetura?</strong></p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat vero architecto consequuntur minima pariatur, exercitationem odit commodi, quo aperiam quia cupiditate accusamus hic sed explicabo ipsam error sint officia quaerat nostrum unde. Rerum maiores fuga consequuntur consequatur, fugiat itaque blanditiis adipisci, animi sunt dicta, expedita iure necessitatibus incidunt quos tempore.</p>
+          <p><strong>o que são essas linhas no background?</strong></p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat vero architecto consequuntur minima pariatur, exercitationem odit commodi, quo aperiam quia cupiditate accusamus hic sed explicabo ipsam error sint officia quaerat nostrum unde. Rerum maiores fuga consequuntur consequatur, fugiat itaque blanditiis adipisci, animi sunt dicta, expedita iure necessitatibus incidunt quos tempore.</p>
 
-            </div>
-          </div>
-        </>
-    )
+        </div>
+      </div>
+    </>
+  )
 }
 
 export default Projects;
