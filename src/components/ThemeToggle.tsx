@@ -2,7 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import { useTheme } from './ThemeProvider';
 
-const ToggleButton = styled.button`
+interface ToggleButtonProps {
+    theme: {
+        text: string;
+        body: string;
+    };
+}
+
+const ToggleButton = styled.button<ToggleButtonProps>`
     position: fixed;
     top: 20px;
     right: 20px;
@@ -20,7 +27,7 @@ const ToggleButton = styled.button`
     }
 `;
 
-const ThemeToggle = () => {
+const ThemeToggle: React.FC = () => {
     const { isDarkMode, toggleTheme } = useTheme();
 
     return (

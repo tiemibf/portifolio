@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export const Header = ({ titleHeader = '' }) => {
+export const Header = ({ titleHeader = '' }: { titleHeader?: string }) => {
     return (
         <header id='header'>
             <div>
