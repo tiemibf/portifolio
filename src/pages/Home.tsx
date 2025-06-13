@@ -8,7 +8,7 @@ export const Home: React.FC = () => {
             <div>
                 <div className='container'>
                     <h1 id='nome'>{"< tiemi nagazawa >"}</h1>
-                    <p className='subtitulo'>dev. front-end + arquiteta</p>
+                    <p className='subtitulo'>front-end software engineer</p>
                 </div>
             </div>
         </>
