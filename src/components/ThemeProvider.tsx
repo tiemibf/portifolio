@@ -3,7 +3,7 @@ import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 import GlobalStyles from '../styles/GlobalStyles';
 import { darkTheme, lightTheme } from '../styles/theme';
 
-const ThemeContext = createContext();
+const ThemeContext = createContext({});
 
 export const ThemeProvider = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState(() => {
