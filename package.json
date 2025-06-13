@@ -2,6 +2,12 @@
   "name": "portifolio",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -9,12 +15,8 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.6.2",
+    "styled-components": "^6.1.19",
     "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
   },
   "eslintConfig": {
     "extends": [

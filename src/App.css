@@ -1,106 +1,89 @@
-*{
-  margin: 0;
-  padding: 0;
-  color: #737373;
-  font-family: 'Montserrat', sans-serif;
-  scroll-behavior: smooth;
-  
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--text-color, #737373);
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-  background: #f5f5f5;
+    background: var(--background-color, #f5f5f5);
 }
 
-/* header fixo */
-
-header{
-  padding:40px 40px 20px 40px;
-  display: flex;
-  justify-content: space-between;
-  font-size:1em;
-  background: #f5f5f5;
-  position: fixed;
-  top:0;
-  right:0;
-  left:0;
+/* Header styles */
+header {
+    padding: 40px 40px 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+    background: var(--background-color, #f5f5f5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
 }
 
-header ul{
-  list-style-type: none;
-  display: flex;
+header ul {
+    list-style-type: none;
+    display: flex;
 }
 
-header li :not(first-child){
-  margin-left: 8px;
+header li:not(:first-child) {
+    margin-left: 8px;
 }
 
-a{
-  text-decoration: none;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-:target{
-  scroll-margin-top:.8em;
+:target {
+    scroll-margin-top: 0.8em;
 }
 
-/* página inicial */
-
-h1{
-  font-size:2.2em;
-  font-weight: 400;
+/* Typography */
+h1 {
+    font-size: 2.2em;
+    font-weight: 400;
 }
 
-.subtitulo{
-  color: #a6a6a6;
-  font-size:1.2em;
+.subtitulo {
+    color: var(--subtitle-color, #a6a6a6);
+    font-size: 1.2em;
 }
-
-
-/* corpo do texto */
 
 h2 {
-  font-size: 1.8em;
-  font-weight: 400;
+    font-size: 1.8em;
+    font-weight: 400;
 }
 
 p {
-  font-size: 1em;
-  margin-bottom: 1.5em;
-  text-align: justify;
+    font-size: 1em;
+    margin-bottom: 1.5em;
+    text-align: justify;
 }
 
-
-
-
-.container :nth-child(n){
-  display: flex;
-  justify-content: center;
-  background-color: rgba(0,0,0,0);
+/* Layout */
+.container {
+    margin-top: 200px;
 }
 
-.container{
-  margin-top: 200px;
+.container>* {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
 }
 
-#home{
-  height:100vh;
-  background-image: url('./assets/img/curvas-de-nivel.png'); height:100vh;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: left bottom;
+#home {
+    height: 100vh;
+    background-image: url('./assets/img/curvas-de-nivel.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: left bottom;
 }
 
-
- .page{
-  margin: 200px 40px 0 40px;
-  height: 100%;
+.page {
+    margin: 200px 40px 0 40px;
+    height: 100%;
 }
-
-/* .two-collumn {
-  margin: 0 0 0 30px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 80px;
-  grid-row-gap: 0px;
-  }
- */
