@@ -1,85 +1,105 @@
 import { createGlobalStyle } from 'styled-components';
 
+// Import fonts with specific weights for better performance
 import '@fontsource/montserrat/400.css';
 import '@fontsource/montserrat/500.css';
 
-
 const GlobalStyles = createGlobalStyle`
+  /* Reset and base styles */
   * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Montserrat', sans-serif;
-        scroll-behavior: smooth;
-    }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    scroll-behavior: smooth;
+    position: relative;
+    z-index: 2;
+  }
 
-    body {
-        color: ${({ theme }) => theme.text};
-        transition: all 0.3s ease;
-        background: linear-gradient(rgba(245, 245, 245, 0.5), rgba(245, 245, 245, 0.5)), url('/curvas-de-nivel.png') no-repeat center 110%, ${({ theme }) => theme.background};
-        background-size: 100%;
-        min-height: 100vh;
-        font-weight: 400;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        overflow: hidden;
-    }
+  body {
+    color: ${({ theme }) => theme.text};
+    transition: color 0.3s ease, background-color 0.3s ease;
+    background-image: url('/curvas-de-nivel.png');
+    background-position: center -100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: ${({ theme }) => theme.background};
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    min-height: 100dvh;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
 
-    a {
-        text-decoration: none;
-        color: ${({ theme }) => theme.text};
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: ${({ theme }) => theme.dimmer};
+      opacity: 0.5;
+      pointer-events: none;
     }
+  }
 
-    h1 {
-        font-size: 2.2em;
-        font-weight: 400;
-        color: ${({ theme }) => theme.text};
+  a {
+    text-decoration: none;
+    color: ${({ theme }) => theme.text};
+    transition: color 0.2s ease;
+    
+    &:hover {
+      color: ${({ theme }) => theme.text};
+      opacity: 0.8;
     }
+  }
 
-    h2 {
-        font-size: 1.8em;
-        font-weight: 400;
-        color: ${({ theme }) => theme.text};
-    }
+  h1 {
+    font-size: clamp(1.8rem, 5vw, 2.2rem); /* Responsive font size */
+    font-weight: 400;
+    color: ${({ theme }) => theme.text};
+    line-height: 1.2;
+  }
 
-    p {
-        font-size: 1em;
-        margin-bottom: 1.5em;
-        text-align: justify;
-        color: ${({ theme }) => theme.text};
-    }
+  h2 {
+    font-size: clamp(1.5rem, 4vw, 1.8rem); /* Responsive font size */
+    font-weight: 400;
+    color: ${({ theme }) => theme.text};
+    line-height: 1.3;
+  }
 
-    .subtitulo {
-        color: ${({ theme }) => theme.textSecondary};
-        font-size: 1.2em;
-    }
+  p {
+    font-size: 1rem;
+    margin-bottom: 1.5em;
+    text-align: justify;
+    color: ${({ theme }) => theme.text};
+    line-height: 1.6;
+    max-width: 75ch; /* Improve readability */
+  }
 
-    .container {
-        margin-top: 200px;
-    }
+  .page {
+    margin: 200px 40px 0 40px;
+    height: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .container > * {
-        display: flex;
-        justify-content: center;
-        background-color: rgba(0, 0, 0, 0);
-    }
+  :focus-visible {
+    outline: 2px solid ${({ theme }) => theme.text};
+    outline-offset: 2px;
+  }
 
-    #home {
-        height: 100vh;
-        background-image: url('/curvas-de-nivel.png');
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: left bottom;
-    }
+  :target {
+    scroll-margin-top: 0.8em;
+  }
 
-    .page {
-        margin: 200px 40px 0 40px;
-        height: 100%;
-    }
-
-    :target {
-        scroll-margin-top: 0.8em;
-    }
+  /* Improve text selection */
+  ::selection {
+    background: ${({ theme }) => theme.text};
+    color: ${({ theme }) => theme.background};
+  }
 `;
 
 export default GlobalStyles; 
