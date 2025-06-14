@@ -65,14 +65,6 @@ const GlobalStyles = createGlobalStyle`
     max-width: 75ch; /* Improve readability */
   }
 
-  .page {
-    margin: 200px 40px 0 40px;
-    height: 100%;
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   :focus-visible {
     outline: 2px solid ${({ theme }) => theme.text};
     outline-offset: 2px;
