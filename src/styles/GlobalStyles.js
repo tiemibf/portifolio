@@ -50,7 +50,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h2 {
-    font-size: clamp(1.5rem, 4vw, 1.8rem);
+    font-size: clamp(1.25rem, 4vw, 1.8rem);
     font-weight: 400;
     color: ${({ theme }) => theme.text};
     line-height: 1.3;
