@@ -1,7 +1,7 @@
 import { navigateToSection } from "@/utils/navigateToSection";
 import React, { useEffect, useState } from "react";
 import { ThemeToggle } from "../ThemeToggle";
-import { HeaderContainer, LanguageButton, LanguageMenu, LeftMenu, RightMenu, StyledAnchor } from "./styles";
+import { HeaderContainer, LeftMenu, RightMenu, StyledAnchor } from "./styles";
 
 export const Header = ({ titleHeader = '' }: { titleHeader?: string }) => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -30,11 +30,11 @@ export const Header = ({ titleHeader = '' }: { titleHeader?: string }) => {
     return (
         <HeaderContainer $isScrolled={isScrolled}>
             <LeftMenu>
-                <LanguageMenu>
+                {/* <LanguageMenu>
                     <LanguageButton>en</LanguageButton>
                     <span>|</span>
                     <LanguageButton>pt</LanguageButton>
-                </LanguageMenu>
+                </LanguageMenu> */}
                 <ThemeToggle />
             </LeftMenu>
 
