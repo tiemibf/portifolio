@@ -6,6 +6,8 @@ Welcome to my portfolio website! This project showcases my work, skills, and exp
 
 I've developed the Figma design myself, leveraging my design skills inherited from my architecture background. This unique perspective allows me to create visually appealing and functional user interfaces that balance aesthetics with usability.
 
+<img width="1502" alt="Captura de Tela 2025-06-14 às 09 47 14" src="https://github.com/user-attachments/assets/2d3e8cec-1a37-4c76-a48d-5900853510f3" />
+
 👉 [Check out the Figma design here](https://www.figma.com/design/prAPDQy5CtnEc0pk6eOZOV/My-Portifolio?node-id=0-1&m=dev&t=7pKuVQG9E6ae1zbQ-1)
 
 ## 🚀 Technologies
