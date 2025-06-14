@@ -16,6 +16,7 @@ export const Header = ({ titleHeader = '' }: { titleHeader?: string }) => {
     }, []);
 
     const menuItems = [
+        { label: 'home', href: 'home' },
         { label: 'sobre', href: 'about' },
         { label: 'currículo', href: 'curriculum' },
         { label: 'projetos', href: 'projects' },
