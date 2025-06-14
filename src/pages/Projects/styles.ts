@@ -27,25 +27,6 @@ export const ProjectsGrid = styled.div`
     flex-wrap: wrap;
 `;
 
-export const ProjectPreview = styled.div`
-    width: 220px;
-    height: 220px;
-    background: #fafafa;
-    border: 2px solid #e0e0e0;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: box-shadow 0.2s, border-color 0.2s;
-    cursor: pointer;
-
-    &:hover {
-        box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-        border-color: #bdbdbd;
-    }
-`;
-
 export const GithubIconContainer = styled.div`
     display: flex;
     justify-content: center;
@@ -62,4 +43,4 @@ export const GithubIcon = styled.img`
     &:hover {
         opacity: 1;
     }
-`; 
+`;
