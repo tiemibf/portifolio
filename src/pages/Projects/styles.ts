@@ -21,7 +21,8 @@ export const ProjectsDescription = styled.p`
 export const ProjectsGrid = styled.div`
     display: flex;
     justify-content: center;
-    gap: 8rem;
+    column-gap: 8rem;
+    row-gap:5rem;
     margin-bottom: 3rem;
     flex-wrap: wrap;
 `;
@@ -52,11 +53,12 @@ export const GithubIconContainer = styled.div`
 `;
 
 export const GithubIcon = styled.img`
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     opacity: 0.5;
     transition: opacity 0.2s;
     cursor: pointer;
+    object-fit: contain;
     &:hover {
         opacity: 1;
     }
