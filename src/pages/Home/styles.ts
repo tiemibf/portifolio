@@ -38,6 +38,10 @@ export const ContentContainer = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 40px;
+    justify-content: center;
 `;
 
 export const Name = styled.h1`

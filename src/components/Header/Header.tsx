@@ -1,3 +1,4 @@
+import { navigateToSection } from "@/utils/navigateToSection";
 import React from "react";
 import { ThemeToggle } from "../ThemeToggle";
 import { HeaderContainer, LanguageButton, LanguageMenu, LeftMenu, RightMenu, StyledAnchor } from "./styles";
@@ -13,10 +14,7 @@ export const Header = ({ titleHeader = '' }: { titleHeader?: string }) => {
 
     const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
         e.preventDefault();
-        const element = document.querySelector(href);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
+        navigateToSection(href);
     };
 
     return (
