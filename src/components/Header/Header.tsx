@@ -1,9 +1,19 @@
 import { navigateToSection } from "@/utils/navigateToSection";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ThemeToggle } from "../ThemeToggle";
 import { HeaderContainer, LanguageButton, LanguageMenu, LeftMenu, RightMenu, StyledAnchor } from "./styles";
 
 export const Header = ({ titleHeader = '' }: { titleHeader?: string }) => {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 0);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     const menuItems = [
         { label: 'sobre', href: '#about' },
@@ -18,7 +28,7 @@ export const Header = ({ titleHeader = '' }: { titleHeader?: string }) => {
     };
 
     return (
-        <HeaderContainer>
+        <HeaderContainer $isScrolled={isScrolled}>
             <LeftMenu>
                 <LanguageMenu>
                     <LanguageButton>en</LanguageButton>

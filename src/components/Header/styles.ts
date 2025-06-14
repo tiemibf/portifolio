@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const HeaderContainer = styled.header`
+export const HeaderContainer = styled.header<{ $isScrolled?: boolean }>`
     position: fixed;
     top: 0;
     left: 0;
@@ -11,6 +11,7 @@ export const HeaderContainer = styled.header`
     padding: 1rem 2rem;
     background-color: ${({ theme }) => theme.background};
     z-index: 1000;
+    border-bottom: ${({ $isScrolled }) => $isScrolled ? '1px solid #D1D1D1' : 'none'};
 `
 
 export const LeftMenu = styled.div`
