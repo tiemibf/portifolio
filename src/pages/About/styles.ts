@@ -8,9 +8,7 @@ export const AboutContainer = styled.div`
 `;
 
 export const Subtitle = styled.h2`
-    font-size: 2rem;
     margin-bottom: 3.75rem;
-    color: ${({ theme }) => theme.text};
 `;
 
 export const TwoColumn = styled.div`
