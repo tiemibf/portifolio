@@ -6,5 +6,6 @@ declare module 'styled-components' {
         text: string;
         textSecondary: string;
         body: string;
+        dimmer: string;
     }
 } 

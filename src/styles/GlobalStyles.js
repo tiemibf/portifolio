@@ -19,10 +19,6 @@ const GlobalStyles = createGlobalStyle`
   body {
     color: ${({ theme }) => theme.text};
     transition: color 0.3s ease, background-color 0.3s ease;
-    background-image: url('/curvas-de-nivel.png');
-    background-position: center -100%;
-    background-repeat: no-repeat;
-    background-size: cover;
     background-color: ${({ theme }) => theme.background};
     position: relative;
     z-index: 1;
@@ -33,15 +29,6 @@ const GlobalStyles = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
     text-rendering: optimizeLegibility;
-
-    &::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: ${({ theme }) => theme.dimmer};
-      opacity: 0.5;
-      pointer-events: none;
-    }
   }
 
   a {

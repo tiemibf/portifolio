@@ -1,16 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { ThemeToggle } from "../ThemeToggle";
-import { HeaderContainer, LanguageButton, LanguageMenu, LeftMenu, RightMenu } from "./styles";
+import { HeaderContainer, LanguageButton, LanguageMenu, LeftMenu, RightMenu, StyledAnchor } from "./styles";
 
 export const Header = ({ titleHeader = '' }: { titleHeader?: string }) => {
 
     const menuItems = [
-        { label: 'sobre', href: '/about' },
-        { label: 'currículo', href: '/curriculum' },
-        { label: 'projetos', href: '/projects' },
-        { label: 'contato', href: '/contact' }
+        { label: 'sobre', href: '#about' },
+        { label: 'currículo', href: '#curriculum' },
+        { label: 'projetos', href: '#projects' },
+        { label: 'contato', href: '#contact' }
     ]
+
+    const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+        e.preventDefault();
+        const element = document.querySelector(href);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
     return (
         <HeaderContainer>
@@ -28,7 +35,9 @@ export const Header = ({ titleHeader = '' }: { titleHeader?: string }) => {
             <RightMenu>
                 {menuItems.map((item, index) => (
                     <React.Fragment key={index}>
-                        <Link to={item.href}>{item.label}</Link>
+                        <StyledAnchor href={item.href} onClick={(e: React.MouseEvent<HTMLAnchorElement>) => handleClick(e, item.href)}>
+                            {item.label}
+                        </StyledAnchor>
                         {index < menuItems.length - 1 && <span>|</span>}
                     </React.Fragment>
                 ))}
