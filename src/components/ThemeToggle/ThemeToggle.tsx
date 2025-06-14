@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTheme } from '../ThemeProvider';
+import { useTheme } from '../../providers/ThemeProvider';
 import { ToggleButton } from './styles';
 
 export const ThemeToggle: React.FC = () => {
