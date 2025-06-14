@@ -1,12 +1,8 @@
 import React from 'react';
-import { Header } from '../components/Header';
 
 export const Curriculum: React.FC = () => {
     return (
-        <>
-            <Header />
-            <div id='curriculum' className='page'>
-            </div>
+        <div id='curriculum' className='page'>
             <div className='subtitle'>
                 <h2>_currículo</h2>
                 <div className='two-collumn'>
@@ -21,6 +17,6 @@ export const Curriculum: React.FC = () => {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat vero architecto consequuntur minima pariatur, exercitationem odit commodi, quo aperiam quia cupiditate accusamus hic sed explicabo ipsam error sint officia quaerat nostrum unde. Rerum maiores fuga consequuntur consequatur, fugiat itaque blanditiis adipisci, animi sunt dicta, expedita iure necessitatibus incidunt quos tempore.</p>
                 </div>
             </div>
-        </>
+        </div>
     );
 }; 

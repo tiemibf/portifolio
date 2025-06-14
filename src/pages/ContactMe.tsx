@@ -1,12 +1,8 @@
 import React from 'react';
-import { Header } from '../components/Header';
 
 export const ContactMe: React.FC = () => {
     return (
         <div id='contact-me' className='page'>
-            <Header />
-            <div>
-            </div>
             <div className='subtitle'>
                 <h2>_contato</h2>
                 <p>hello world (:</p>

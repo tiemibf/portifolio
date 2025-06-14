@@ -1,10 +1,8 @@
 import React from 'react';
-import { Header } from '../components/Header';
 
 export const About: React.FC = () => {
     return (
         <div className='page'>
-            <Header />
             <div className='subtitle'>
                 <h2>_sobre mim</h2>
                 <div className='two-collumn'>
