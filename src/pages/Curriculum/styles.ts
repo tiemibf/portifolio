@@ -57,6 +57,21 @@ export const SectionTitle = styled.h3`
     }
 `;
 
+export const ItemTitle = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 1rem;
+`;
+
+export const ExperienceList = styled.ul`
+    font-size: 15px;
+    line-height:1.5rem;
+    padding-left: 1.5rem;
+    margin: 0.75rem 0;
+`;
+
 export const List = styled.ul`
     list-style: none;
     padding: 0;
@@ -70,13 +85,16 @@ export const List = styled.ul`
 export const ListItem = styled.li`
     font-size: 1rem;
     line-height: 1.5;
-    strong {
-        font-weight: bold;
-        margin-right: 0.5rem;
-    }
     span {
         font-size: 0.95rem;
     }
+`;
+
+export const GraduationInfo = styled.div`
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
 `;
 
 export const Year = styled.span`
@@ -91,7 +109,7 @@ export const Content = styled.div`
 `;
 
 export const Description = styled.span`
-    font-size: 0.95rem;
+    font-size: 15px;
 `;
 
 export const SkillsList = styled.ul`

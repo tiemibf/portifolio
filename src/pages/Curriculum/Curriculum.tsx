@@ -4,6 +4,9 @@ import {
     Content,
     CurriculumContainer,
     Description,
+    ExperienceList,
+    GraduationInfo,
+    ItemTitle,
     LanguageBar,
     LanguageBars,
     List,
@@ -11,19 +14,11 @@ import {
     SectionTitle,
     SkillsList,
     Subtitle,
-    TwoColumn,
-    Year
+    TwoColumn
 } from './styles';
 
 export const Curriculum: React.FC = () => {
-    const skills = [
-        'HTML5',
-        'CSS',
-        'JavaScript',
-        'Illustrator',
-        'ReactJS',
-        'Photoshop',
-    ]
+    const skills = ['React', 'Typescript', 'HTML', 'CSS', 'Javascript', 'NodeJS', 'Jest', 'CI/CD Pipelines', 'NewRelic', 'Git', 'RESTful APIs', 'ArgoCD', 'Optimizely', 'React Testing Library']
 
     return (
         <div id='curriculum'>
@@ -35,13 +30,47 @@ export const Curriculum: React.FC = () => {
                             <SectionTitle>experiência profissional</SectionTitle>
                             <List>
                                 <ListItem>
-                                    <Year>2021</Year>
                                     <Content>
-                                        Fernandes Arquitetura e Design
+                                        <strong>Ab-Inbev - BEES Brasil</strong>
                                         <Description>
-                                            Cargo: Arquiteta Jr.
-                                            Período de 01/2021 - 08/2021
+                                            A Ab-inbev é uma empresa multinacional, hoje considerada a maior cervejaria do mundo e conta com o Bees como um dos seus principais braços de tecnologia. O Bees é uma plataforma global B2B de comércio digital de mercadorias.
                                         </Description>
+                                        <List>
+                                            <ListItem>
+                                                <ItemTitle>
+                                                    <span>FrontEnd Software Engineer Pleno</span>
+                                                    <span>set/2024 – Atual</span>
+                                                </ItemTitle>
+                                                <ExperienceList>
+                                                    <li>Manutenção e desenvolvimento de uma das principais plataformas de backoffice da companhia, wrapper de aproximadamente 90 Micro-frontends, utilizando React, Single-spa e Typescript;</li>
+                                                    <li>Suporte e manutenção de pipelines (CI/CD);</li>
+                                                    <li>Desenvolvimento de biblioteca de componentes internos (Design System) com Storybook (desenvolvimento em React + Rollup);</li>
+                                                    <li>Participação no desenvolvimento e manutenção de plataforma fintech e de gerenciamento de crédito da empresa;</li>
+                                                    <li>Definição de interfaces funcionais em colaboração com equipes de Design e Produto</li>
+                                                </ExperienceList>
+                                            </ListItem>
+                                            <ListItem>
+                                                <ItemTitle>
+                                                    <span>FrontEnd Software Engineer Júnior</span>
+                                                    <span>mai/2023 – set/2024</span>
+                                                </ItemTitle>
+                                                <ExperienceList>
+                                                    <li>Desenvolvimento e manutenção do front-end de aplicações em arquitetura de Micro-frontend, com uso de Single-SPA, React e Typescript;</li>
+                                                    <li>Escrita de testes unitários em Jest + React Testing Library;</li>
+                                                    <li>Desenvolvimento de BFFs em Node.JS com arquitetura hexagonal;</li>
+                                                </ExperienceList>
+                                            </ListItem>
+                                            <ListItem>
+                                                <ItemTitle>
+                                                    <span>Associate FrontEnd Software Engineer</span>
+                                                    <span>ago/2022 – mai/2023</span>
+                                                </ItemTitle>
+                                                <ExperienceList>
+                                                    <li>Desenvolvimento do front end de uma aplicação para centralização dos dados e PowerBI dashboards, com React + arquitetura de Microfront-end (single-spa)</li>
+                                                    <li>Escrita de testes unitários em Jest + React Testing Library;</li>
+                                                </ExperienceList>
+                                            </ListItem>
+                                        </List>
                                     </Content>
                                 </ListItem>
                             </List>
@@ -53,74 +82,24 @@ export const Curriculum: React.FC = () => {
                             <SectionTitle>educação</SectionTitle>
                             <List>
                                 <ListItem>
-                                    <Year>2022</Year>
-                                    <Content>
-                                        Universidade Estácio de Sá
-                                        <Description>
-                                            Tecnólogo em Análise e Desenvolvimento de Sistemas
-                                            Conclusão: 2/2024
-                                        </Description>
-                                    </Content>
+                                    <ItemTitle>
+                                        <span> Tecnólogo em Análise e Desenvolvimento de Sistemas</span>
+                                        <span>2023-2026</span>
+                                    </ItemTitle>
+                                    <GraduationInfo>
+                                        <div>Universidade Estácio de Sá</div>
+                                        <div>Conclusão: 2026</div>
+                                    </GraduationInfo>
                                 </ListItem>
                                 <ListItem>
-                                    <Year>2015-2020</Year>
-                                    <Content>
-                                        Universidade de Brasília
-                                        <Description>
-                                            Graduação em Arquitetura e Urbanismo
-                                            Conclusão: 2/2020
-                                        </Description>
-                                    </Content>
-                                </ListItem>
-                            </List>
-                        </div>
-                        <div>
-                            <SectionTitle>experiência acadêmica</SectionTitle>
-                            <List>
-                                <ListItem>
-                                    <Year>2016-2017</Year>
-                                    <Content>
-                                        Centro de Ação Social em Arquitetura Sustentável (CASAS)
-                                        <Description>
-                                            Escritório Modelo de Assistência Técnica em Arquitetura e Urbanismo
-                                        </Description>
-                                    </Content>
-                                </ListItem>
-                                <ListItem>
-                                    <Year>2018</Year>
-                                    <Content>
-                                        Projeto de Assistência Técnica para Habitação de Origem Social
-                                        <Description>
-                                            Elaboração de projeto executivo de Melhoria Habitacional para uma família selecionada pela CODHAB.
-                                        </Description>
-                                    </Content>
-                                </ListItem>
-                            </List>
-                        </div>
-                        <div>
-                            <SectionTitle>extracurriculares</SectionTitle>
-                            <List>
-                                <ListItem>
-                                    <Year>2022</Year>
-                                    <Content>
-                                        Bootcamps
-                                        <Description>
-                                            | Hiring Coders - Gama Academy + VTEX
-                                            | Bootcamp Digital Innovation One - Inter Front-end Developer
-                                        </Description>
-                                    </Content>
-                                </ListItem>
-                                <ListItem>
-                                    <Year>2020-2022</Year>
-                                    <Content>
-                                        Cursos
-                                        <Description>
-                                            | Imersão Dev - Alura
-                                            | Curso JavaScript e TypeScript - Udemy
-                                            | Curso ReactJS + NextJS - Udemy
-                                            | Imersão ReactJS - Alura
-                                        </Description>
-                                    </Content>
+                                    <ItemTitle>
+                                        <span>Graduação em Arquitetura e Urbanismo</span>
+                                        <span>2015-2020</span>
+                                    </ItemTitle>
+                                    <GraduationInfo>
+                                        <div>Universidade de Brasília</div>
+                                        <div>Conclusão: 2/2020</div>
+                                    </GraduationInfo>
                                 </ListItem>
                             </List>
                         </div>
@@ -156,6 +135,6 @@ export const Curriculum: React.FC = () => {
                     </Column>
                 </TwoColumn>
             </CurriculumContainer>
-        </div>
+        </div >
     );
 }; 
