@@ -43,14 +43,14 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h1 {
-    font-size: clamp(1.8rem, 5vw, 2.2rem); /* Responsive font size */
+    font-size: clamp(1.8rem, 5vw, 2.2rem);
     font-weight: 400;
     color: ${({ theme }) => theme.text};
     line-height: 1.2;
   }
 
   h2 {
-    font-size: clamp(1.5rem, 4vw, 1.8rem); /* Responsive font size */
+    font-size: clamp(1.5rem, 4vw, 1.8rem);
     font-weight: 400;
     color: ${({ theme }) => theme.text};
     line-height: 1.3;
