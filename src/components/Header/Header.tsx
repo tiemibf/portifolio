@@ -16,10 +16,10 @@ export const Header = ({ titleHeader = '' }: { titleHeader?: string }) => {
     }, []);
 
     const menuItems = [
-        { label: 'sobre', href: '#about' },
-        { label: 'currículo', href: '#curriculum' },
-        { label: 'projetos', href: '#projects' },
-        { label: 'contato', href: '#contact' }
+        { label: 'sobre', href: 'about' },
+        { label: 'currículo', href: 'curriculum' },
+        { label: 'projetos', href: 'projects' },
+        { label: 'contato', href: 'contact' }
     ]
 
     const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
