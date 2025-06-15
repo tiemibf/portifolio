@@ -11,16 +11,16 @@ export const Projects: React.FC = () => {
 
     const projects = [
         {
-            id: 'multistep-form',
-            image: MultistepFormImage,
-            alt: 'Multistep Form',
-            href: 'https://multistep-form-tiemi.netlify.app/'
-        },
-        {
             id: 'link-sharing-app',
             image: LinkSharingAppImage,
             alt: 'Link Sharing App',
             href: 'https://link-sharing-app-tiemi.netlify.app/'
+        },
+        {
+            id: 'multistep-form',
+            image: MultistepFormImage,
+            alt: 'Multistep Form',
+            href: 'https://multistep-form-tiemi.netlify.app/'
         },
         {
             id: '3',
